@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Enums\TaskStatusEnum;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -15,15 +16,15 @@ class Task extends Model
         "id",
         'title',
         'description',
+        'status',
         'user_id',
         'created_at',
         'updated_at'
     ];
 
-    public function TaskStatus(): HasMany
-    {
-        return $this->hasMany(TaskStatus::class);
-    }
+    protected $casts = [
+        'status' => TaskStatusEnum::class,
+    ];
 
     public function user(): HasMany
     {
