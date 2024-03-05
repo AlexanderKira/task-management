@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Task\TaskRequest;
 use App\Http\Resources\Task\TaskResource;
 use App\Models\Task;
-use App\Services\Task\Filters\FilterManager;
+use App\Services\Filters\FilterManager;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Support\Facades\Auth;

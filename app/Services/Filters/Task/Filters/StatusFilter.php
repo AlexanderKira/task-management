@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\Task\Filters\Filters;
+namespace App\Services\Filters\Task\Filters;
 
-use App\Services\Task\Filters\Filter;
+use App\Services\Filters\Filter;
 
 class StatusFilter extends Filter
 {

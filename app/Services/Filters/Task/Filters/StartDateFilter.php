@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Services\Task\Filters\Filters;
+namespace App\Services\Filters\Task\Filters;
 
-use App\Services\Task\Filters\Filter;
+use App\Services\Filters\Filter;
 use Carbon\Carbon;
 
-class EndDateFilter extends Filter
+class StartDateFilter extends Filter
 {
     public function apply($query, $value)
     {
         if ($value) {
             $value = Carbon::parse($value);
-            return $query->where('updated_at', '<=', $value);
+            return $query->where('updated_at', '>=', $value);
         }
 
         return $this->next ? $this->next->apply($query, $value) : $query;
