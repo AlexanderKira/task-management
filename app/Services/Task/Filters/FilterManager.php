@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Services\Task\Filters;
+namespace App\Services\Task\Filters;
 
-use App\Http\Services\Task\Filters\Filters\EndDateFilter;
-use App\Http\Services\Task\Filters\Filters\StartDateFilter;
-use App\Http\Services\Task\Filters\Filters\StatusFilter;
-use App\Http\Services\Task\Filters\Filters\TitleFilter;
+use App\Services\Task\Filters\Filters\EndDateFilter;
+use App\Services\Task\Filters\Filters\StartDateFilter;
+use App\Services\Task\Filters\Filters\StatusFilter;
+use App\Services\Task\Filters\Filters\TitleFilter;
 use Illuminate\Database\Eloquent\Builder;
 
 class FilterManager

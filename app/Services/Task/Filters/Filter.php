@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Services\Task\Filters;
+namespace App\Services\Task\Filters;
 
 abstract class Filter
 {

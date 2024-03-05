@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Services\Task\Filters\Filters;
+namespace App\Services\Task\Filters\Filters;
 
-use App\Http\Services\Task\Filters\Filter;
+use App\Services\Task\Filters\Filter;
 
 class TitleFilter extends Filter
 {
