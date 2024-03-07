@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Filters;
+namespace App\Services\Filters\Task;
 
 use App\Services\Filters\Task\Filters\EndDateFilter;
 use App\Services\Filters\Task\Filters\StartDateFilter;
